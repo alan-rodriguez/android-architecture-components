@@ -16,19 +16,19 @@
 
 package com.android.example.github.vo
 
-import android.arch.persistence.room.Entity
-import android.arch.persistence.room.ForeignKey
+import androidx.room.Entity
+import androidx.room.ForeignKey
 import com.google.gson.annotations.SerializedName
 
 @Entity(
     primaryKeys = ["repoName", "repoOwner", "login"],
-    foreignKeys = [ForeignKey(
+    foreignKeys = [(ForeignKey(
         entity = Repo::class,
         parentColumns = ["name", "owner_login"],
         childColumns = ["repoName", "repoOwner"],
         onUpdate = ForeignKey.CASCADE,
         deferred = true
-    )]
+    ))]
 )
 data class Contributor(
     @field:SerializedName("login")

@@ -17,7 +17,7 @@
 package com.android.example.github.db
 
 import android.database.sqlite.SQLiteException
-import android.support.test.runner.AndroidJUnit4
+import androidx.test.runner.AndroidJUnit4
 import com.android.example.github.util.LiveDataTestUtil.getValue
 import com.android.example.github.util.TestUtil
 import org.hamcrest.CoreMatchers.`is`

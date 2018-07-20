@@ -16,12 +16,11 @@
 
 package com.android.example.github.util
 
-import android.databinding.DataBindingUtil
-import android.databinding.ViewDataBinding
-import android.support.test.espresso.IdlingResource
-import android.support.test.rule.ActivityTestRule
-import android.support.v4.app.FragmentActivity
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
 import android.view.View
+import androidx.test.espresso.IdlingResource
+import androidx.test.rule.ActivityTestRule
 import java.util.UUID
 
 /**
