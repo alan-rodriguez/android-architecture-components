@@ -119,8 +119,7 @@ dependencies {
 
     androidTestImplementation(deps.arch_core.testing, {
     })
-    androidTestImplementation deps.dexmaker
-    androidTestImplementation deps.mockito.core, { exclude group: 'net.bytebuddy' }
+    androidTestImplementation deps.mockito.android
 }
 
 task fullCoverageReport(type: JacocoReport) {

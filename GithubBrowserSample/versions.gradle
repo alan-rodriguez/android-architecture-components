@@ -37,8 +37,7 @@ versions.retrofit = "2.3.0"
 versions.okhttp_logging_interceptor = "3.9.0"
 versions.mockwebserver = "3.8.1"
 versions.apache_commons = "2.5"
-versions.mockito = "2.7.19"
-versions.mockito_all = "1.10.19"
+versions.mockito = "2.19.1"
 versions.dexmaker = "2.2.0"
 versions.constraint_layout = "2.0.0-alpha1"
 versions.glide = "4.7.1"
@@ -111,7 +110,7 @@ deps.atsl = atsl
 
 def mockito = [:]
 mockito.core = "org.mockito:mockito-core:$versions.mockito"
-mockito.all = "org.mockito:mockito-all:$versions.mockito_all"
+mockito.android = "org.mockito:mockito-android:$versions.mockito"
 deps.mockito = mockito
 
 def kotlin = [:]
@@ -127,7 +126,6 @@ def glide = [:]
 glide.runtime = "com.github.bumptech.glide:glide:$versions.glide"
 glide.compiler = "com.github.bumptech.glide:compiler:$versions.glide"
 deps.glide = glide
-deps.dexmaker = "com.linkedin.dexmaker:dexmaker-mockito:$versions.dexmaker"
 deps.constraint_layout = "androidx.constraintlayout:constraintlayout:$versions.constraint_layout"
 deps.timber = "com.jakewharton.timber:timber:$versions.timber"
 deps.junit = "junit:junit:$versions.junit"
